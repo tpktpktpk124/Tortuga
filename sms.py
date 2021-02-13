@@ -66,13 +66,13 @@ def main():
         t.sleep(.5)
         MESSAGE = raw_input(color.GREEN+'[~]'+color.CWHITE+' Enter a message to spam: ')
         if CARRIER == 'att':
-            CARRIER_MESSAGE = '@mms.att.net'
+            CARRIER_MESSAGE = '@yopmail.com'
         if CARRIER == 'tmobile':
-            CARRIER_MESSAGE = '@tmomail.net'
+            CARRIER_MESSAGE = '@yopmail.com'
         if CARRIER == 'verizon':
-            CARRIER_MESSAGE = '@vtext.com'
+            CARRIER_MESSAGE = '@yopmail.com'
         if CARRIER == 'sprint':
-            CARRIER_MESSAGE = '@messaging.sprintpcs.com'
+            CARRIER_MESSAGE = '@yopmail.com'
         INFO(MESSAGE,CARRIER_MESSAGE,NUMBER,email_login,email_password)
     except smtplib.SMTPAuthenticationError:
         print (color.RED + '[!] '+color.CWHITE+'Incorrect email information')
